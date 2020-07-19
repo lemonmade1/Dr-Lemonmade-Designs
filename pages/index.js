@@ -1,15 +1,19 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
+import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Read <Link href="/posts/menu"><a>this page!</a></Link>
       </h1>
 
       <p className="description">
@@ -53,7 +57,7 @@ const Home = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Powered by <img src="/vercel.svg" alt="Vercel Logo" />
+        Powered by <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
       </a>
     </footer>
 
