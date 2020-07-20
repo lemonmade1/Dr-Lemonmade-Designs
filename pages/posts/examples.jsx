@@ -130,7 +130,6 @@ export default function Examples() {
           text-align: left;
           text-decoration: none;
           border: 1px solid #eaeaea;
-          border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
@@ -174,6 +173,7 @@ export default function Examples() {
         @media (max-width: 600px) {
           .grid {
             width: 100%;
+            height: 100%;
             flex-direction: column;
           }
         }
