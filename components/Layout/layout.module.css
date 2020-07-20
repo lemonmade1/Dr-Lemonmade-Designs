@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+  max-width: 80%;
+  max-height: 85vh;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPage {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000073;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .mainPage {
+    height: auto;
+  }
+}

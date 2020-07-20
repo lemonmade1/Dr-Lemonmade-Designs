@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout/layout'
 
 export default function About() {
   return (
@@ -9,11 +9,10 @@ export default function About() {
         <title>About</title>
       </Head>
       <h1>About</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
+      
+      <div>
+        
+      </div>
     </Layout>
   )
 }

@@ -1,65 +1,58 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import Footer from '../components/Footer/footer'
+// import Layout from '../components/Layout/layout'
+// import utilStyles from '../styles/utils.module.css'
 
 const Home = () => (
-  <div className="container">
+  <div className='container'>
     <Head>
       <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel='icon' href='/favicon.ico' />
     </Head>
 
     <main>
-      <h1 className="title">
-        Read <Link href="/posts/menu"><a>this page!</a></Link>
+      <h1 className='title'>
+        <span className='lemons fontChange'>DR. Lemon'made</span> <Link href='/posts/menu'><a>DESIGNS!</a></Link>
       </h1>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+      <div className='whatInspires'>
+        <h2 className='lemons'>What Inspires You?</h2>
+      </div>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+      <div className='grid'>
+        <a href='posts/about' className='card'>
+          <h3>About Us &rarr;</h3>
+          <p>Find in-depth information about <span className='lemons'>DR. Lemon'made DESIGNS</span> & features.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
+        <a href='posts/menu' className='card'>
+          <h3>Our Templates &rarr;</h3>
+          <p>Learn how to get one of our <span className='lemons'>Templates</span> today!</p>
         </a>
 
         <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
+          href='posts/examples'
+          className='card'
         >
           <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <p>How <span className='lemons'>Project's</span> can be better with just a touch of something else.</p>
         </a>
 
         <a
-          href="https://vercel.com/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
+          href='posts/contact'
+          className='card'
         >
-          <h3>Deploy &rarr;</h3>
+          <h3>Contact Us &rarr;</h3>
           <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
+            Instantly <span className='lemons'>Contact Us</span> to build your next site.
           </p>
         </a>
       </div>
     </main>
 
-    <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-      </a>
-    </footer>
+    <Footer />
 
     <style jsx>{`
       .container {
@@ -72,7 +65,6 @@ const Home = () => (
       }
 
       main {
-        padding: 5rem 0;
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -80,28 +72,19 @@ const Home = () => (
         align-items: center;
       }
 
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .whatInspires {
+        margin-top: 2rem;
       }
 
       a {
         color: inherit;
+        text-shadow: 1px 1px 3px black;
         text-decoration: none;
+      }
+
+      .lemons {
+        color: yellow;
+        text-shadow: 1px 1px 3px black;
       }
 
       .title a {
@@ -124,6 +107,8 @@ const Home = () => (
       .title,
       .description {
         text-align: center;
+        color: yellow;
+        text-shadow: 1px 1px 1px black;
       }
 
       .description {
@@ -131,31 +116,32 @@ const Home = () => (
         font-size: 1.5rem;
       }
 
-      code {
+      {/* code {
         background: #fafafa;
         border-radius: 5px;
         padding: 0.75rem;
         font-size: 1.1rem;
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
+      } */}
 
       .grid {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-
         max-width: 800px;
         margin-top: 3rem;
       }
 
       .card {
+        height: 10rem;
         margin: 1rem;
+        background: #0000006e;
+        color: white;
         flex-basis: 45%;
         padding: 1.5rem;
         text-align: left;
-        color: inherit;
         text-decoration: none;
         border: 1px solid #eaeaea;
         border-radius: 10px;
@@ -186,7 +172,8 @@ const Home = () => (
           flex-direction: column;
         }
       }
-    `}</style>
+    `}
+    </style>
 
     <style jsx global>{`
       html,
@@ -200,7 +187,8 @@ const Home = () => (
       * {
         box-sizing: border-box;
       }
-    `}</style>
+    `}
+    </style>
   </div>
 )
 
