@@ -8,7 +8,7 @@ export default function Examples() {
       <Head>
         <title>Examples</title>
       </Head>
-      
+
       <div className='examplesPage'>
         <div>
           <h1>Examples</h1>
@@ -31,7 +31,7 @@ export default function Examples() {
           </a>
 
           <a href="../../compScience/communication.jpg" className="card">
-            To this..
+            Final Result..
             <img src='../../compScience/communication.jpg' alt='' />  
           </a>
         </div>
