@@ -128,7 +128,7 @@ export default function Examples () {
           }
 
           .card {
-            height: 10rem;
+            height: 12rem;
             width: 19rem;
             margin: 1rem;
             background: #0000006e;
