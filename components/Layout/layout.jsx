@@ -4,12 +4,11 @@ import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
 
-// import NavBar from '../NavBar/navBar'
 import Footer from '../Footer/footer'
 
 
-const name = 'Your Name'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Terrell D Lemons'
+export const siteTitle = 'Lemon\'made Website'
 
 export default function Layout({ children, home }) {
   return (
