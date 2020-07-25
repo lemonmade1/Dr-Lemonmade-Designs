@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
 
-import NavBar from '../NavBar/navBar'
+// import NavBar from '../NavBar/navBar'
 import Footer from '../Footer/footer'
 
 
@@ -32,7 +32,7 @@ export default function Layout({ children, home }) {
         <script type="text/javascript" src="../js/custSlicker.js"></script>
       </Head>
 
-      <NavBar />
+      {/* <NavBar /> */}
       
       <main className={styles.mainPage}>
         {children}
