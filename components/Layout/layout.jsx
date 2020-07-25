@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './layout.module.css'
 import utilStyles from '../../styles/utils.module.css'
 
-import NavBar from '../../components/NavBar/navbar'
+import NavBar from '../NavBar/navbar'
 import Footer from '../Footer/footer'
 
 
