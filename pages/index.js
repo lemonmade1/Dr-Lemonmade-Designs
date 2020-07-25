@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import Footer from '../components/Footer/footer'
-// import Layout from '../components/Layout/layout'
+
 // import utilStyles from '../styles/utils.module.css'
 
 const Home = () => (
@@ -10,11 +10,32 @@ const Home = () => (
     <Head>
       <title>Home</title>
       <link rel='icon' href='/favicon.ico' />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" /> 
+      <link rel="stylesheet" href="../css/fontawesome-all.min.css" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+      <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
+      <link rel="stylesheet" href="../slick/slick.css" type="text/css" />
+      <link rel="stylesheet" href="../slick/slick-theme.css" type="text/css" />
+      <link rel="stylesheet" href="../css/tooplate-style.css" type="text/css" />
+
+      <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+      <script type="text/javascript" src="../js/jquery.backstretch.min.js"></script>
+      <script type="text/javascript" src="../slick/slick.min.js"></script>
+      <script type="text/javascript" src="../js/custSlicker.js"></script>
     </Head>
+    
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div className="loader-section section-left"></div>
+      <div className="loader-section section-right"></div>
+    </div> 
 
     <main>
       <h1 className='title'>
-        <span className='lemons fontChange'>DR. Lemon'made</span> <Link href='/posts/menu'><a>DESIGNS!</a></Link>
+        <span className='lemons fontChange'>DR. Lemon'made</span> 
+        <a href='/posts/menu' className='.tm-main-nav a'> DESIGNS!</a>
       </h1>
 
       <div className='whatInspires'>
@@ -50,6 +71,12 @@ const Home = () => (
           </p>
         </a>
       </div>
+
+      <div id="preload-01"></div>
+      <div id="preload-02"></div>
+      <div id="preload-03"></div>
+      <div id="preload-04"></div>
+
     </main>
 
     <Footer />
@@ -135,7 +162,7 @@ const Home = () => (
       }
 
       .card {
-        height: 10rem;
+        height: 12rem;
         margin: 1rem;
         background: #0000006e;
         color: white;

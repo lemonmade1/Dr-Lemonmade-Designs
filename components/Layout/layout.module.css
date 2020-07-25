@@ -1,6 +1,6 @@
 .container {
-  height: 100%;
-  max-width: 80%;
+  height: 85%;
+  max-width: 50%;
   max-height: 85vh;
   padding: 0 1rem;
   margin: 0 auto;
@@ -13,11 +13,15 @@
 }
 
 .mainPage {
+  width: 100%;
   height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
   background: #00000073;
+  
+  padding: 3rem;
+  /* position: relative;
+    left: 28rem;
+    top: 2rem; */
 }
 
 .backToHome {
@@ -25,7 +29,17 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+    max-width: 80%;
+    max-height: 100vh;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  
   .mainPage {
-    height: auto;
+    width: 100%;
+    height: 125%;
+    background: #00000073;
   }
 }

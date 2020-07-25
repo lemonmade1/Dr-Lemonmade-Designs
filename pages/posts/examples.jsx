@@ -60,6 +60,10 @@ export default function Examples () {
             align-items: center;
           }
 
+          h1 {
+            text-align: center;
+          }
+
           .whatInspires {
             margin-top: 3rem;
           }
