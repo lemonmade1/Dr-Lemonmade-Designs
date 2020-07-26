@@ -37,8 +37,7 @@ export default function Menu() {
             </div>
           </div>
         </div>
-      </section>
-    
+      </section>    
     </Layout>
   )
 }

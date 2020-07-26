@@ -35,10 +35,16 @@ export default function Contact() {
                   </form>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12 tm-contact-col">
+              <div className="col-md-6 col-sm-12 tm-contact-col contactInfo">
                 <div className="tm-address-box">
                   <p>Aliquam interdum, nisl sedd faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum tortor.</p>
+
+                  <hr />
+
                   <p>Curabitur venenatis leo in augue convallis, vulputate sollicitudin ex maximus.</p>
+
+                  <hr />
+
                   <address>
                     120-240 Aliquam nec neque augue <br />                    Suspendisse tincidunt nunc, <br />
                     vitae sagis justo 11000
@@ -49,6 +55,19 @@ export default function Contact() {
           </div>
         </section>
       </div>
+      <style jsx>{`
+        .contactInfo {
+          text-align: center
+        }
+        hr {
+          background: white;
+        }        
+
+        @media (max-width: 600px) {
+          
+        }
+      `}
+      </style>
     </Layout>
   )
 }
