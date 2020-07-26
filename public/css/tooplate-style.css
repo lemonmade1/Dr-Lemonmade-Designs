@@ -344,7 +344,7 @@ footer a { color: white; }
         display: block;
         position: absolute;
         right: -60px;
-        top: 0;
+        top: -4px;
     }
     
     .menu-icon {
@@ -355,7 +355,6 @@ footer a { color: white; }
         cursor: pointer;
         margin-top: 4px;
         margin-left: 4px;
-        border-radius: 5px;
         width: 60px;
         height: 50px;
         z-index: 1001;
