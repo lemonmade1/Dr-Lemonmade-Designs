@@ -8,11 +8,36 @@ export default function Menu() {
       <Head>
         <title>Menu</title>
       </Head>
-      <h1>Menu</h1>
-       
-      <div>
-        
-      </div>
+      
+      <section id='tm-section-2' className='tm-section tm-section-carousel'>
+        <div>
+          <header className='mb-4'>
+              <h2 className='tm-text-shadow'>Our Products</h2>
+          </header>
+          <div className='tm-img-container'>
+            <div className='tm-img-slider'>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+              <a href='../../compScience/laptop1.jpg' className='tm-slider-img'>
+                <img src='../../compScience/laptop1.jpg' alt='Image' className='img-fluid' />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>    
     </Layout>
   )
 }

@@ -60,6 +60,10 @@ export default function Examples () {
             align-items: center;
           }
 
+          h1 {
+            text-align: center;
+          }
+
           .whatInspires {
             margin-top: 3rem;
           }
@@ -128,7 +132,7 @@ export default function Examples () {
           }
 
           .card {
-            height: 10rem;
+            height: 12rem;
             width: 19rem;
             margin: 1rem;
             background: #0000006e;
