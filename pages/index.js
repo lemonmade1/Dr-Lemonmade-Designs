@@ -197,6 +197,9 @@ const Home = () => (
           width: 100%;
           flex-direction: column;
         }
+        .card {
+          width: 27rem;
+        }
       }
     `}
     </style>
