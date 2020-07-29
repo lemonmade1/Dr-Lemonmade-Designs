@@ -153,12 +153,11 @@ const Home = () => (
       } */}
 
       .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         max-width: 800px;
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
 
       .card {

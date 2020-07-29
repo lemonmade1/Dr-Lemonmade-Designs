@@ -123,17 +123,15 @@ export default function Examples () {
           }
 
           .grid {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             max-width: 800px;
             margin-top: 3rem;
           }
 
           .card {
             height: 12rem;
-            width: 19rem;
             margin: 1rem;
             background: #0000006e;
             color: white;
@@ -167,30 +165,24 @@ export default function Examples () {
             border: 1px solid white;
           }
 
-          footer {
-            width: 100%;
-            height: 100px;
-            border-top: 1px solid #eaeaea;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          footer img {
-            margin-left: 0.5rem;
-          }
-
-          footer a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
           @media (max-width: 600px) {
-            .grid {
+            {/* .grid {
               width: 100%;
               height: 100%;
               flex-direction: column;
+            } */}
+
+            .grid {
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: 4fr;
+              max-width: 800px;
+              margin-top: 3rem;
+            }
+
+            element.style {
+              position: relative;
+              top: 16rem;
             }
           }
         `}
