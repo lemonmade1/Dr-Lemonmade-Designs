@@ -152,12 +152,11 @@ const Home = () => (
       } */}
 
       .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         max-width: 800px;
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
 
       .card {
@@ -193,12 +192,28 @@ const Home = () => (
       }
 
       @media (max-width: 600px) {
+        .container {
+          position: relative;
+          top: -2em;
+        }
+        
         .grid {
           width: 100%;
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          max-width: 800px;
+          margin: 2rem auto 5rem;
         }
+
         .card {
           width: 27rem;
+          height: 9rem;
+        }
+
+        .title,
+        .description {
+          width: min-content;
         }
       }
     `}
