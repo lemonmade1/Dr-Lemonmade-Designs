@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 import Footer from '../components/Footer/footer'
 
@@ -11,30 +10,30 @@ const Home = () => (
       <title>Home</title>
       <link rel='icon' href='/favicon.ico' />
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" /> 
-      <link rel="stylesheet" href="../css/fontawesome-all.min.css" />
-      <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
-      <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css" />
-      <link rel="stylesheet" href="../slick/slick.css" type="text/css" />
-      <link rel="stylesheet" href="../slick/slick-theme.css" type="text/css" />
-      <link rel="stylesheet" href="../css/tooplate-style.css" type="text/css" />
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' />
+      <link rel='stylesheet' href='../css/fontawesome-all.min.css' />
+      <link rel='stylesheet' href='../css/bootstrap.min.css' type='text/css' />
+      <link rel='stylesheet' href='../css/magnific-popup.css' type='text/css' />
+      <link rel='stylesheet' href='../slick/slick.css' type='text/css' />
+      <link rel='stylesheet' href='../slick/slick-theme.css' type='text/css' />
+      <link rel='stylesheet' href='../css/tooplate-style.css' type='text/css' />
 
-      <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
-      <script type="text/javascript" src="../js/jquery.backstretch.min.js"></script>
-      <script type="text/javascript" src="../slick/slick.min.js"></script>
-      <script type="text/javascript" src="../js/custSlicker.js"></script>
+      <script type='text/javascript' src='../js/jquery-3.2.1.min.js' />
+      <script type='text/javascript' src='../js/jquery.magnific-popup.min.js' />
+      <script type='text/javascript' src='../js/jquery.backstretch.min.js' />
+      <script type='text/javascript' src='../slick/slick.min.js' />
+      <script type='text/javascript' src='../js/custSlicker.js' />
     </Head>
-    
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div className="loader-section section-left"></div>
-      <div className="loader-section section-right"></div>
-    </div> 
+
+    <div id='loader-wrapper'>
+      <div id='loader' />
+      <div className='loader-section section-left' />
+      <div className='loader-section section-right' />
+    </div>
 
     <main>
       <h1 className='title'>
-        <span className='lemons fontChange'>DR. Lemon'made</span> 
+        <span className='lemons fontChange'>DR. Lemon'made</span>
         <a href='/posts/menu' className='.tm-main-nav a'> DESIGNS!</a>
       </h1>
 
@@ -72,10 +71,10 @@ const Home = () => (
         </a>
       </div>
 
-      <div id="preload-01"></div>
-      <div id="preload-02"></div>
-      <div id="preload-03"></div>
-      <div id="preload-04"></div>
+      <div id='preload-01' />
+      <div id='preload-02' />
+      <div id='preload-03' />
+      <div id='preload-04' />
 
     </main>
 
@@ -162,7 +161,7 @@ const Home = () => (
       }
 
       .card {
-        height: 12rem;
+        height: 10rem;
         margin: 1rem;
         background: #0000006e;
         color: white;
