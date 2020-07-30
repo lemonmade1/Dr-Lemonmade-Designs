@@ -193,12 +193,28 @@ const Home = () => (
       }
 
       @media (max-width: 600px) {
+        .container {
+          position: relative;
+          top: -2em;
+        }
+        
         .grid {
           width: 100%;
-          flex-direction: column;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          max-width: 800px;
+          margin: 2rem auto 5rem;
         }
+
         .card {
           width: 27rem;
+          height: 9rem;
+        }
+
+        .title,
+        .description {
+          width: min-content;
         }
       }
     `}

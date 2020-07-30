@@ -37,6 +37,14 @@ export default function Menu() {
             </div>
           </div>
         </div>
+        <style jsx>{`
+        @media (max-width: 600px) {
+          .container {
+            height: 94vh;
+          }
+        }
+      `}
+      </style>
       </section>    
     </Layout>
   )

@@ -176,13 +176,8 @@ export default function Examples () {
               display: grid;
               grid-template-columns: 1fr;
               grid-template-rows: 4fr;
-              max-width: 800px;
-              margin-top: 3rem;
-            }
-
-            element.style {
-              position: relative;
-              top: 16rem;
+              max-width: 300px;
+              margin: 1rem auto 0;
             }
           }
         `}
